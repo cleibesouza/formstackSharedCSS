@@ -4,9 +4,7 @@
    ========================================================= */
 
 @media (max-width: 520px) {
-   body{
-    outline: 10px solid red !important;
-}
+ 
     .ff-ui-dialog {
         position: fixed !important;
         top: 2% !important;
