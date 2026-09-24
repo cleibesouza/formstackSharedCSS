@@ -1,3 +1,29 @@
-body{
-    outline: 10px solid red !important;
+/* =========================================================
+   FORMSTACK SHARED MOBILE MODAL FIX
+   Applies to screens 520px and smaller
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+    .ff-ui-dialog {
+        position: fixed !important;
+        top: 2% !important;
+        left: 2% !important;
+        right: 2% !important;
+        height: 85vh !important;
+        max-height: 85vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Make only the modal content scroll */
+    .ff-ui-dialog-content {
+        flex: 1 1 auto !important;
+        overflow-y: auto !important;
+    }
+
+    /* Keep button pane visible */
+    .ff-ui-dialog-buttonpane {
+    }
+
 }
