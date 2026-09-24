@@ -2,11 +2,11 @@
    FORMSTACK SHARED MOBILE MODAL FIX
    Applies to screens 520px and smaller
    ========================================================= */
-body{
+
+@media (max-width: 520px) {
+   body{
     outline: 10px solid red !important;
 }
-@media (max-width: 520px) {
-
     .ff-ui-dialog {
         position: fixed !important;
         top: 2% !important;
