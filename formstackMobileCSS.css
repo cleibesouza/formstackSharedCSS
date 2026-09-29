@@ -3,7 +3,7 @@
    Applies to screens 520px and smaller
    ========================================================= */
 
-body {
+/* body {
     outline: 10px solid red !important;
 }
 @media (max-width: 520px) {
@@ -29,4 +29,37 @@ body {
     .ff-ui-dialog-buttonpane {
     }
 
+} */
+
+/* =========================================================
+   FORMSTACK SHARED MOBILE MODAL FIX
+   Applies to screens 520px and smaller
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+    .ff-ui-dialog {
+        position: fixed !important;
+        top: 2% !important;
+        left: 2% !important;
+        right: 2% !important;
+        bottom: 2% !important;
+
+        height: auto !important;
+        max-height: none !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Only the results/content area should scroll */
+    .ff-ui-dialog-content {
+        flex: 1 1 auto !important;
+        overflow-y: auto !important;
+    }
+
+    /* Don't allow the Done button area to shrink */
+    .ff-ui-dialog-buttonpane {
+        flex: 0 0 auto !important;
+    }
 }
