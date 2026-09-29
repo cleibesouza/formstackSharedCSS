@@ -3,8 +3,11 @@
    Applies to screens 520px and smaller
    ========================================================= */
 
+body {
+    outline: 10px solid red !important;
+}
 @media (max-width: 520px) {
- border: 10px solid red;
+ 
     .ff-ui-dialog {
         position: fixed !important;
         top: 2% !important;
