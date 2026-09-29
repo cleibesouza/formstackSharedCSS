@@ -33,8 +33,4 @@ body {
     .ff-ui-dialog-buttonpane {
         flex: 0 0 auto !important;
     }
-   /* Make pop up table content entire window width */
-   #dvFastForms table#list  {
-      width: 100% !important;
-      }
 }
